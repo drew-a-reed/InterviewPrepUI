@@ -1,0 +1,11 @@
+nav.navbar.navbar-expand-lg.navbar-light {
+  background-color: var(--primary-color);
+}
+
+svg {
+  fill: var(--secondary-color);
+}
+
+a.nav-link.active {
+  color: var(--secondary-color) !important;
+}

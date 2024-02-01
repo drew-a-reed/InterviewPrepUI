@@ -1,0 +1,17 @@
+<h1>Edit User</h1>
+<form #form="ngForm" (ngSubmit)="updateUser()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="Name" name="name" [(ngModel)]="updatedUser.name">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="email" name="email" [(ngModel)]="updatedUser.email">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="number" class="form-control" id="phone" aria-describedby="phone" name="phone" [(ngModel)]="updatedUser.phone">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="button" class="btn btn-danger" style="margin-left: 1rem;" (click)="deleteUser(updatedUser.id)">Delete User</button>
+</form>
